@@ -63,7 +63,12 @@
         });
 
         document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'u') {
+                event.preventDefault();
+                window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+            }
             if (event.key === 'F12') {
+                event.preventDefault();
                 window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
             }
         });
